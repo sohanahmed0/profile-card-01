@@ -1,0 +1,114 @@
+/** @format */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI" sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    display: grid;
+    place-items: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.profile-box {
+    width: 80vw;
+    height: 50vh;
+    background-color: #e4dfdf;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+    padding-right: 0px;
+    border-radius: 12px;
+}
+
+.content-box-1 {
+    width: 50%;
+    height: 100%;
+}
+.profile-box .content-box-1 .img-box {
+    border: 2px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 2px;
+}
+.profile-box .content-box-1 .img-box .profile-pic {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.about-box {
+    padding: 20px 0;
+}
+
+.about-box .name {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.about-box .name + span {
+    display: inline-block;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.btn {
+    border: none;
+    display: block;
+    padding: 10px 30px;
+    border-radius: 25px;
+    background: transparent;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    border: 2px solid #000;
+    width: 100%;
+    margin: 10px 0 0;
+}
+.content-box-2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.post-box,
+.like-box,
+.follower-box {
+    width: 100px;
+    height: 100px;
+    background: #fbec95;
+    color: darkblue;
+    flex-grow: 1;
+    text-transform: capitalize;
+    font-weight: bold;
+     border-radius:12px;
+}
+.post-box ,
+.like-box,
+.follower-box{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+.like-box {
+    margin: 10px 0;
+}
